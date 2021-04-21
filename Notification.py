@@ -27,7 +27,7 @@ def code():
     Reference_price = \
         driver.find_element_by_xpath('/html/body/section[3]/div[2]/div/div[1]/table[2]/tbody/tr[3]/td[2]').text
     driver.quit()
-# If file doesn't exit or is empty, it creates one and fills it with the sample
+# If file doesn't exist or is empty, it creates one and fills it with the sample
     with open('output.txt', 'a') as file1:
         sizecheck = f'{os.path.abspath(os.getcwd())}\\output.txt'
         filesize = os.path.getsize(sizecheck)
